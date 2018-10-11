@@ -10,7 +10,7 @@ dvmt = []
 fb = []
 msft = []
 
-with open("stock-value-2018.csv") as csvfile:
+with open("stock-high-2018.csv") as csvfile:
     reader = csv.reader(csvfile, quoting=csv.QUOTE_NONNUMERIC)
     next(reader, None)
     for row in reader: #each row is a list
@@ -27,7 +27,7 @@ plt.plot(months, dvmt, color='#FBFB16', marker='o', linestyle='solid', label='De
 plt.plot(months, fb, color='#4EF4FF', marker='o', linestyle='solid', label='Facebook (FB)')
 plt.plot(months, msft, color='#71FF4E', marker='o', linestyle='solid', label='Microsft (MSFT)')
 plt.legend(loc='upper left')
-plt.ylabel("Close Price")
+plt.ylabel("High Price")
 plt.xlabel("Date Range")
 plt.xticks(rotation=45, ha="right")
 plt.show()
