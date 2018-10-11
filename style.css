@@ -1,0 +1,26 @@
+body{
+  background-image: url("images/market.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.stock-title{
+  text-align: center;
+  background-color: white;
+  opacity: .6;
+  color: green;
+  font-weight: bold;
+  font-size: 50px;
+}
+.values{
+  width: 500px;
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.stock-text{
+  text-align: center;
+  background-color: white;
+  opacity: .6;
+  font-size: 25px;
+}
