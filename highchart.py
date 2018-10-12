@@ -13,7 +13,7 @@ msft = []
 with open("stock-high-2018.csv") as csvfile:
     reader = csv.reader(csvfile, quoting=csv.QUOTE_NONNUMERIC)
     next(reader, None)
-    for row in reader: #each row is a list
+    for row in reader:
         months.append(row[0])
         nflx.append(int(row[1]))
         aapl.append(int(row[2]))
